@@ -100,3 +100,92 @@ print("All write operations are done. Please check 'my_out_file.txt'")
 
 print("#"*40, end="\n\n")
 #########################
+print("Read Operations using 1) read")
+print("-"*20)
+# ---------------
+
+# Step-1: Connect to file
+# ---------------
+my_file_handle = open(file=r"my_out_file.txt", mode="r")
+
+# Step-2: Read
+# ---------------
+#         1) read() METHOD
+#             - Use this to get entire file content in one STRING
+file_content = my_file_handle.read()
+print("file_content:", file_content, sep="\n", end="\n\n")
+print("file_content in raw format:", repr(file_content), sep="\n", end="\n\n")
+
+# Step-3: Disconnect from file
+# ---------------
+my_file_handle.close()
+
+print("#"*40, end="\n\n")
+#########################
+print("Read Operations using 2) readlines()")
+print("-"*20)
+# ---------------
+
+# Step-1: Connect to file
+# ---------------
+my_file_handle = open(file=r"my_out_file.txt", mode="r")
+
+# Step-2: Read
+# ---------------
+#         2) readlines() METHOD
+#             - Use this to get entire file content in one LIST
+file_content = my_file_handle.readlines()
+print("file_content:", file_content, sep="\n", end="\n\n")
+
+# Step-3: Disconnect from file
+# ---------------
+my_file_handle.close()
+
+print("#"*40, end="\n\n")
+#########################
+print("Read Operations using 3) readline()")
+print("-"*20)
+# ---------------
+
+# Step-1: Connect to file
+# ---------------
+my_file_handle = open(file=r"my_out_file.txt", mode="r")
+
+# Step-2: Read
+# ---------------
+#         3) readline() METHOD
+#             - Use this to get one line
+file_content = my_file_handle.readline()
+print("1st line:", file_content)
+
+file_content = my_file_handle.readline()
+print("2nd line:", file_content)
+
+file_content = my_file_handle.readline()
+print("3rd line:", file_content)
+
+# Step-3: Disconnect from file
+# ---------------
+my_file_handle.close()
+
+print("#"*40, end="\n\n")
+#########################
+print("Read Operations using for loop to read line by line")
+print("-"*20)
+# ---------------
+
+# Step-1: Connect to file
+# ---------------
+my_file_handle = open(file=r"my_out_file.txt", mode="r")
+
+# Step-2: Read
+# ---------------
+for each_line in my_file_handle: # In each iteration, it will read one line.
+    print("Each Line:", each_line)
+
+# Step-3: Disconnect from file
+# ---------------
+my_file_handle.close()
+
+print("#"*40, end="\n\n")
+#########################
