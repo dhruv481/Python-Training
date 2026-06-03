@@ -102,3 +102,18 @@ print("my_dictionary:", my_dictionary, end="\n\n")
 
 print("#"*40, end="\n\n")
 #########################
+print("Write to my_report_2.json")
+print("-"*20)
+# ---------------
+
+my_json_file_handle = open(file=r"my_report_2.json", mode="w")
+
+import json
+json.dump(my_dictionary, my_json_file_handle)# dump() is write() method
+
+my_json_file_handle.close()
+
+print("Created my_report_2.json, Please check")
+
+print("#"*40, end="\n\n")
+#########################
