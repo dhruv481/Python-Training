@@ -95,3 +95,22 @@ employee_db_update(name="emp-2", company="comp-2", phone=12345, email="e1@email.
 
 print("#"*40, end="\n\n")
 #########################
+print("By default, we can pass only values or both argument name and value")
+print("-"*20)
+# ---------------
+
+# If we didn't mention * or /, then we can pass only values or both argument name and value
+
+def employee(name, company):
+    return {"name": name, "company": company}
+
+# Passing only values will work
+received_value = employee("emp-1", "comp-1")
+print("received_value:", received_value)
+
+# Passing both argument name and values will work
+received_value = employee(name="emp-1", company="comp-1")
+print("received_value:", received_value)
+
+print("#"*40, end="\n\n")
+#########################
