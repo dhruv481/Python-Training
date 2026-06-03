@@ -1,0 +1,14 @@
+"""
+Get data from my_report_3.json
+then
+write extracted data to my_report_5.txt
+
+Expected content in my_report_5.txt
+        IP                      DATE                            URL
+123.123.123.123     26/Apr/2000         http://www.jafsoft.com/asctortf/
+123.123.123.123     26/Apr/2000         http://search.netscape.com/Computers/Data_Formats/Document/Text/RTF
+123.123.123.123     26/Apr/2000         http://www.jafsoft.com/asctortf/
+123.123.123.123     26/Apr/2000         http://www.jafsoft.com/asctortf/
+123.123.123.123     26/Apr/2000         http://www.jafsoft.com/asctortf/
+123.123.123.123     26/Apr/2000         http://www.jafsoft.com/asctortf/
+"""
