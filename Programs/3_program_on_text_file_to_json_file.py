@@ -117,3 +117,20 @@ print("Created my_report_2.json, Please check")
 
 print("#"*40, end="\n\n")
 #########################
+print("Read from my_report_2.json")
+print("-"*20)
+# ---------------
+
+my_json_file_handle = open(file=r"my_report_2.json", mode="r")
+
+import json
+json_file_content = json.load(my_json_file_handle) # load() is read method
+
+my_json_file_handle.close()
+
+print("json_file_content:", json_file_content, end="\n\n")
+
+print("type of json_file_content:", type(json_file_content), end="\n\n")
+
+print("#"*40, end="\n\n")
+#########################
